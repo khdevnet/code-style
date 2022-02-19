@@ -2,6 +2,15 @@
 * [ReSharper](https://www.jetbrains.com/resharper)
 * [Code style rule options](https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options)
 * [Code style .editorconfig](/.attachments/editorconfig-0abef250-6c35-4b89-9401-afec0644f6db.txt)
+
+
+## Configure
+* Install nuget packages
+  * [StyleCop.Analyzers](https://www.nuget.org/packages/StyleCop.Analyzers) to all projects
+  * [Threading.Analyzers](https://www.nuget.org/packages/Microsoft.VisualStudio.Threading.Analyzers)
+* Copy .editorconfig to folder from what do you want to apply rules
+* Copy .ruleset and Directory.Build.props to folder
+
 * **Phase 2** [SonarScanner Azure DevOps](https://docs.sonarqube.org/latest/analysis/azuredevops-integration/)
 
 # Basic Principles
