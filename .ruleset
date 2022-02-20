@@ -4,11 +4,30 @@
     <Rule Id="CA1505" Action="Error" />
   </Rules>
   <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp" RuleNamespace="Microsoft.CodeAnalysis.CSharp">
+    <Rule Id="CS0168" Action="Error" />
     <Rule Id="CS1633" Action="None" />
     <Rule Id="CS1998" Action="Error" />
     <Rule Id="CS8019" Action="Error" />
     <Rule Id="CS8618" Action="Error" />
     <Rule Id="CS8625" Action="Error" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp.CodeStyle" RuleNamespace="Microsoft.CodeAnalysis.CSharp.CodeStyle">
+    <Rule Id="IDE0019" Action="Error" />
+    <Rule Id="IDE0020" Action="Error" />
+    <Rule Id="IDE0041" Action="Error" />
+    <Rule Id="IDE0066" Action="Error" />
+    <Rule Id="IDE0161" Action="Error" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp.Features" RuleNamespace="Microsoft.CodeAnalysis.CSharp.Features">
+    <Rule Id="IDE0019" Action="Error" />
+    <Rule Id="IDE0020" Action="Error" />
+    <Rule Id="IDE0031" Action="Error" />
+    <Rule Id="IDE0038" Action="Error" />
+    <Rule Id="IDE0041" Action="Error" />
+    <Rule Id="IDE0066" Action="Error" />
+    <Rule Id="IDE0078" Action="Error" />
+    <Rule Id="IDE0083" Action="Error" />
+    <Rule Id="IDE0161" Action="Error" />
   </Rules>
   <Rules AnalyzerId="Microsoft.VisualStudio.Threading.Analyzers" RuleNamespace="Microsoft.VisualStudio.Threading.Analyzers">
     <Rule Id="VSTHRD100" Action="Error" />

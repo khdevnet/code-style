@@ -1,0 +1,15 @@
+[*.cs]
+dotnet_style_null_propagation = true
+csharp_style_namespace_declarations = file_scoped:error
+# Pattern matching preferences
+dotnet_diagnostic.IDE0019.severity = error # Use pattern matching to avoid 'as' followed by a 'null' check
+dotnet_diagnostic.IDE0020.severity = error # Use pattern matching to avoid 'is' check followed by a cast
+dotnet_diagnostic.IDE0066.severity = error # Use switch expression
+dotnet_diagnostic.IDE0078.severity = error # Use pattern matching
+dotnet_diagnostic.IDE0083.severity = error # Use pattern matching (not operator)
+
+csharp_style_pattern_matching_over_as_with_null_check = true:error
+csharp_style_pattern_matching_over_is_with_cast_check = true:error
+csharp_style_prefer_switch_expression = true:error
+csharp_style_prefer_pattern_matching = true:error
+csharp_style_prefer_not_pattern = true:error

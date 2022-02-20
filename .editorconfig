@@ -9,6 +9,8 @@
 
 dotnet_diagnostic.CA1505.severity = error
 
+dotnet_diagnostic.CS0168.severity = error
+
 dotnet_diagnostic.CS1633.severity = none
 
 dotnet_diagnostic.CS1998.severity = error
@@ -18,6 +20,24 @@ dotnet_diagnostic.CS8019.severity = error
 dotnet_diagnostic.CS8618.severity = error
 
 dotnet_diagnostic.CS8625.severity = error
+
+dotnet_diagnostic.IDE0019.severity = error
+
+dotnet_diagnostic.IDE0020.severity = error
+
+dotnet_diagnostic.IDE0031.severity = error
+
+dotnet_diagnostic.IDE0038.severity = error
+
+dotnet_diagnostic.IDE0041.severity = error
+
+dotnet_diagnostic.IDE0066.severity = error
+
+dotnet_diagnostic.IDE0078.severity = error
+
+dotnet_diagnostic.IDE0083.severity = error
+
+dotnet_diagnostic.IDE0161.severity = error
 
 dotnet_diagnostic.SA0001.severity = none
 
@@ -406,3 +426,19 @@ dotnet_diagnostic.SX1309S.severity = error
 dotnet_diagnostic.VSTHRD100.severity = error
 
 dotnet_diagnostic.VSTHRD200.severity = error
+
+[*.cs]
+dotnet_style_null_propagation = true
+csharp_style_namespace_declarations = file_scoped:error
+# Pattern matching preferences
+dotnet_diagnostic.IDE0019.severity = error # Use pattern matching to avoid 'as' followed by a 'null' check
+dotnet_diagnostic.IDE0020.severity = error # Use pattern matching to avoid 'is' check followed by a cast
+dotnet_diagnostic.IDE0066.severity = error # Use switch expression
+dotnet_diagnostic.IDE0078.severity = error # Use pattern matching
+dotnet_diagnostic.IDE0083.severity = error # Use pattern matching (not operator)
+
+csharp_style_pattern_matching_over_as_with_null_check = true:error
+csharp_style_pattern_matching_over_is_with_cast_check = true:error
+csharp_style_prefer_switch_expression = true:error
+csharp_style_prefer_pattern_matching = true:error
+csharp_style_prefer_not_pattern = true:error
